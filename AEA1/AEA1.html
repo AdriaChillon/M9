@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEA1</title>
+    <style>
+        body {
+            background-color: rgb(246, 245, 243);
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        /* Media query para pantallas con un ancho mayor a 600px */
+        @media (min-width: 601px) {
+            .container {
+                flex-wrap: wrap; /* Envolver las imágenes en una nueva línea */
+                justify-content: center; /* Centrar horizontalmente las imágenes */
+            }
+
+            .container div {
+                width: 45%; /* Establecer el ancho de las columnas al 45% para formar un cuadrado de dos por dos */
+                text-align: center; /* Centrar el contenido en la columna */
+                margin: 10px; /* Agregar espacio entre las columnas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pràctica 5. Imatges al web</h1>
+    <div class="container">
+        <div>
+            <img src="calavera.png"></img>
+            <p>Format png</p>
+            <p>Pes: 139KB</p>
+        </div>
+        
+        <div>
+            <img src="calavera.gif"></img>
+            <p>Format gif</p>
+            <p>Pes: 48,1KB</p>
+        </div>
+
+        <div>
+            <img src="calavera.jpg"></img>
+            <p>Format jpg</p>
+            <p>Pes: 17,9KB</p>
+        </div>
+
+        <div>
+            <img src="calavera.webp"></img>
+            <p>Format webp</p>
+            <p>Pes: 14,2KB</p>
+        </div>
+    </div>
+</body>
+</html>
